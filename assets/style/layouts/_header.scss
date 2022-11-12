@@ -1,0 +1,38 @@
+@use "../variables/variables.scss" as variables;
+
+.m-header {
+    font-size: variables.$text_lg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+    border-bottom: solid 0.1vw variables.$color_first;
+
+    &__navigation {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+        &--item {
+            list-style-type: none;
+            padding: 1vw;
+        }
+    }
+
+    &__action {
+        input {
+            font-size: variables.$text_md;
+            border: solid 0.2vw red;
+            padding: 0.1vw;
+        }
+
+        &--input {
+            width: 10vw;
+        }
+
+        &--btn {
+            width: 3vw;
+        }
+    }
+}
