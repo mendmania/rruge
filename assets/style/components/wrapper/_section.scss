@@ -1,0 +1,6 @@
+@use "../../variables/variables.scss" as variables;
+
+.m-wrapper-section {
+    display: flex;
+    flex-direction: var(--flex-large);
+}

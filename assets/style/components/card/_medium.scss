@@ -1,0 +1,26 @@
+.m-card-md {
+    figure {
+        height: 20vw;
+
+        img {
+            height: 20vw;
+            width: 100%;
+            object-fit: cover;
+            -o-object-fit: cover;
+        }
+    }
+
+    summary {
+        background-color: var(--color-dark);
+        color: var(--color-light);
+        font-weight: bold;
+        padding: var(--size-2);
+
+        h2 {
+            cursor: pointer;
+            &:hover {
+                color: var(--color-fourth);
+            }
+        }
+    }
+}

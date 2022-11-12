@@ -1,0 +1,7 @@
+@use "../../variables/variables.scss" as variables;
+
+.m-section-sm {
+    width: var(--mw-20);
+    border: solid var(--size-02) var(--color-first);
+    order: var(--order-sm);
+}

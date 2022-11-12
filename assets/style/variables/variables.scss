@@ -1,0 +1,74 @@
+:root {
+    --color-light: #ffffff;
+    --color-dark: #0f0b0b;
+    --color-first: #6224b0;
+    --color-second: #876c91;
+    --color-third: #f8f374;
+    --color-fourth: #468463;
+
+    --text-size-xsm: 5vw;
+    --text-size-sm: 6vw;
+    --text-size-md: 8vw;
+    --text-size-lg: 10vw;
+
+    --border-width-normal: 0.1vw;
+    --border-width-thick: 0.2vw;
+
+    --size-01: 0.1vw;
+    --size-02: 0.2vw;
+    --size-03: 0.3vw;
+    --size-04: 0.4vw;
+    --size-05: 0.5vw;
+
+    --size-1: 1vw;
+    --size-2: 2vw;
+    --size-3: 3vw;
+    --size-4: 4vw;
+    --size-5: 5vw;
+
+    --mw-100: 100vw;
+    --mw-80: 100vw;
+    --mw-50: 100vw;
+    --mw-30: 100vw;
+    --mw-20: 100vw;
+
+    --flex-large: column;
+
+    --order-sm: 3;
+    --order-md: 2;
+    --order-lg: 1;
+}
+
+@media (min-width: 320px) {
+}
+@media (min-width: 480px) {
+    :root {
+        --text-size-xsm: 0.75vw;
+        --text-size-sm: 1.5vw;
+        --text-size-md: 2vw;
+        --text-size-lg: 3vw;
+
+        --border-width-normal: 0.1vw;
+        --border-width-thick: 0.2vw;
+
+        --mw-100: 100vw;
+        --mw-80: 80vw;
+        --mw-50: 50vw;
+        --mw-30: 30vw;
+        --mw-20: 20vw;
+
+        --flex-large: row;
+
+        --order-sm: 1;
+        --order-md: 3;
+        --order-lg: 2;
+    }
+}
+@media (min-width: 600px) {
+}
+@media (min-width: 801px) {
+}
+@media (min-width: 1025px) {
+}
+@media (min-width: 1281px) {
+}

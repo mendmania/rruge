@@ -1,0 +1,6 @@
+@use "../../variables/variables.scss" as variables;
+
+.m-card-sm {
+    display: flex;
+    flex-direction: column;
+}

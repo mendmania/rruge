@@ -1,0 +1,7 @@
+@use "./large";
+@use "./medium";
+@use "./small";
+
+.m-card {
+    padding: var(--size-05);
+}
