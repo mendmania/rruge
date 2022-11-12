@@ -4,6 +4,12 @@ console.log('section-sm')
 
 <template>
   <section class="m-section m-section-sm">
-    section-sm
+    <CardSmall />
+    <CardSmall />
+    <CardSmall />
+    <CardSmall />
+    <CardSmall />
+    <CardSmall />
+    <CardSmall />
   </section>
 </template>

@@ -1,6 +1,6 @@
 @use "../../variables/variables.scss" as variables;
 
-.m-card-sm {
+.m-wrapper-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: var(--flex-large);
 }

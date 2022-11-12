@@ -1,4 +1,7 @@
-@use "../variables/variables.scss" as variables;
+@use "../../variables/variables.scss" as variables;
 
 .m-hero-section {
+    width: var(--mw-80);
+    margin: var(--size-05) auto;
+    border: solid var(--size-02) var(--color-fourth);
 }
