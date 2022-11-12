@@ -4,10 +4,6 @@ console.log('section-lg')
 
 <template>
   <section class="m-section m-section-lg">
-    <CardLarge/>
-    <CardLarge/>
-    <CardLarge/>
-    <CardLarge/>
-    <CardLarge/>
+    <slot />
   </section>
 </template>

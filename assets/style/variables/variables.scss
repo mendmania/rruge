@@ -27,16 +27,22 @@
     --size-5: 5vw;
 
     --mw-100: 100vw;
+    --mw-90: 100vw;
     --mw-80: 100vw;
+    --mw-70: 100vw;
     --mw-50: 100vw;
     --mw-30: 100vw;
     --mw-20: 100vw;
 
     --flex-large: column;
+    --flex-large-mod: column;
 
     --order-sm: 3;
     --order-md: 2;
     --order-lg: 1;
+
+    --mh-device-lg: 35vh;
+    --mh-device-md: 25vh;
 }
 
 @media (min-width: 320px) {
@@ -52,16 +58,22 @@
         --border-width-thick: 0.2vw;
 
         --mw-100: 100vw;
+        --mw-90: 90vw;
         --mw-80: 80vw;
+        --mw-70: 70vw;
         --mw-50: 50vw;
         --mw-30: 30vw;
         --mw-20: 20vw;
 
         --flex-large: row;
+        --flex-large-mod: row-reverse;
 
         --order-sm: 1;
         --order-md: 3;
         --order-lg: 2;
+
+        --mh-device-lg: 60vh;
+        --mh-device-md: 40vh;
     }
 }
 @media (min-width: 600px) {

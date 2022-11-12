@@ -1,11 +1,8 @@
 figure {
     margin: 0;
-    // height: 30vw;
 
-    // img {
-    //     height: 30vw;
-    //     width: 100%;
-    //     object-fit: cover;
-    //     -o-object-fit: cover;
-    // }
+    img {
+        width: 100vw;
+        max-width: 100%;
+    }
 }
