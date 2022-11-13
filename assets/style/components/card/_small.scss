@@ -3,4 +3,14 @@
 .m-card-sm {
     display: flex;
     flex-direction: column;
+    font-size: var(--text-size-sm);
+
+    a {
+        font-weight: bold;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
