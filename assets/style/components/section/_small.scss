@@ -2,6 +2,7 @@
 
 .m-section-sm {
     width: var(--mw-20);
-    border: solid var(--size-02) var(--color-first);
+    // border: solid var(--size-02) var(--color-first);
     order: var(--order-sm);
+    margin: var(--size-1);
 }

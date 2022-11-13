@@ -1,18 +1,19 @@
 <script setup>
-console.log('article-md')
+console.log("article-md");
 </script>
 
 <template>
-  <article class="m-card m-card-md">
-    <nuxt-link :to="'/article-url'">    
-    <figure>
-      <img alt="card-img-medium"
-           src="https://images.pexels.com/photos/13918680/pexels-photo-13918680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      <figcaption></figcaption>
-    </figure>
-    <summary>
-      <h2>mMarketing winners and losers of the week</h2>
-    </summary>
-  </nuxt-link>
+  <article class="mc-second-wrapper">
+    <NuxtLink :to="'/article-url'">
+      <div class="mc-card-second">
+        <img src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+             alt=""
+             class="mc-card-second__image">
+        <div class="mc-card-second__text-wrapper">
+          <h2 class="mc-card-second__title">Amazing First Title</h2>
+          <time class="mc-card-second__post-date">Jan 29, 2018</time>
+        </div>
+      </div>
+    </NuxtLink>
   </article>
 </template>
