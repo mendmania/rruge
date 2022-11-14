@@ -1,10 +1,13 @@
 <script setup>
+
 console.log('footer')
 </script>
 
 <template>
   <footer class="m-footer">
-    footer
+    <footer-third/>
+    <footer-second/>
+    <FooterFirst />
   </footer>
 </template>
 
