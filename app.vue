@@ -4,6 +4,7 @@
 
 <template>
     <NuxtLayout name="header" />
+    <NuxtLayout name="category-header" />
     <NuxtLayout name="body" >
       <NuxtPage/>
     </NuxtLayout>

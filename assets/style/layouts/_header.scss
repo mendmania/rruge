@@ -5,8 +5,15 @@
     flex-direction: var(--flex-large);
     align-items: center;
     justify-content: space-between;
-    padding: 0 1vw;
-    border-bottom: solid 0.1vw var(--color-first);
+    padding: 1vw;
+
+    h1 {
+        cursor: pointer;
+
+        &:hover {
+            color: var(--color-first);
+        }
+    }
 
     &__navigation {
         display: flex;
