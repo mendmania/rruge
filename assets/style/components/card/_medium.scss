@@ -1,9 +1,11 @@
 .mc-second-wrapper {
     cursor: pointer;
-    margin-bottom: var(--size-1);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    margin-bottom: var(--size-2);
+    margin-left: var(--size-1);
+    margin-right: var(--size-1);
+    // display: flex;
+    // flex-flow: row wrap;
+    // justify-content: center;
 
     .mc-card-second {
         border: 0px solid aqua;
@@ -83,38 +85,6 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-
-        &__read-more {
-            background: black;
-            color: #bbb;
-            display: block;
-            padding: 0.4rem 0.6rem;
-            border-radius: 0.3rem;
-            margin-top: 1rem;
-            border: 1px solid #444;
-            font-size: 0.8rem;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            text-decoration: none;
-            width: 7rem;
-            margin-left: auto;
-            position: relative;
-            z-index: 5;
-        }
-
-        &__read-more i {
-            position: relative;
-            left: 0.2rem;
-            color: #888;
-            transition: left 0.5s ease, color 0.6s ease;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
-
-        &__read-more:hover i {
-            left: 0.5rem;
-            color: yellow;
-        }
     }
 }
 
@@ -122,17 +92,8 @@
     .mc-card-second {
         &:hover {
             .mc-card-second {
-                // &__details-wrapper {
-                //     max-height: 20rem;
-                //     opacity: 1;
-                // }
-
-                // &__text-wrapper {
-                //     background-color: rgba(0, 0, 0, 0.6);
-                // }
-
                 &__title {
-                    color: yellow;
+                    color: var(--color-third);
                 }
 
                 &__image {

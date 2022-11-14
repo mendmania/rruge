@@ -1,0 +1,13 @@
+@use "./first";
+@use "./second";
+@use "./third";
+
+.m-footer {
+    box-sizing: border-box;
+    width: 100%;
+    color: var(--color-light);
+
+    ul {
+        margin: 0;
+    }
+}
