@@ -1,10 +1,12 @@
 :root {
     --color-light: #ffffff;
     --color-dark: #0f0b0b;
-    --color-first: #6224b0;
-    --color-second: #876c91;
-    --color-third: #f8f374;
-    --color-fourth: #468463;
+    --color-first-light: #579376;
+    --color-first: #325343;
+    --color-first-dark: #16251e;
+    --color-second: #9bd58b;
+    --color-third: #fffcf6;
+    --color-fourth: #f5f7f5;
 
     --text-size-xsm: 5vw;
     --text-size-sm: 6vw;
@@ -52,7 +54,7 @@
         --text-size-xsm: 0.844vw;
         --text-size-sm: 1.2vw;
         --text-size-md: 2vw;
-        --text-size-lg: 3vw;
+        --text-size-lg: 2.5vw;
 
         --border-width-normal: 0.1vw;
         --border-width-thick: 0.2vw;

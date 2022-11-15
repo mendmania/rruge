@@ -1,11 +1,15 @@
 @use "../variables/variables.scss" as variables;
 
 .m-header {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: var(--flex-large);
     align-items: center;
     justify-content: space-between;
     padding: 1vw;
+    width: 70vw;
+    margin: 0 auto;
 
     h1 {
         cursor: pointer;
