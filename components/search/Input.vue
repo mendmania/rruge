@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const searchInputActive = ref(false)
+const searchInputActive = ref(true)
 
 function onClickSearchInputAction(data) {
     searchInputActive.value = data
@@ -31,6 +31,16 @@ function onClickSearchInputAction(data) {
   color: var(--color-light);
 }
 
+::placeholder {
+    color: var(--color-dark)
+}
+
+@media (min-width: 480px) {
+    ::placeholder {
+    color: var(--color-light)
+    }
+}
+
 .search-wrapper .input-holder {
   height: 30px;
   width: 30px;
@@ -40,7 +50,7 @@ function onClickSearchInputAction(data) {
   transition: all 0.3s ease-in-out;
 }
 .search-wrapper.active .input-holder {
-  width: 450px;
+    width: 70vw;
   border-radius: 50px;
 border: solid .1vw var(--color-first);
   transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57);
@@ -57,7 +67,6 @@ border: solid .1vw var(--color-first);
   box-sizing: border-box;
   border: none;
   outline: none;
-  font-family: "Open Sans", Arial, Verdana;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -65,6 +74,12 @@ border: solid .1vw var(--color-first);
   transform: translate(0, 60px);
   transition: all 0.3s cubic-bezier(0, 0.105, 0.035, 1.57);
   transition-delay: 0.3s;
+}
+
+@media (min-width: 480px) {
+    .search-wrapper .input-holder .search-input {
+        color: var(--color-light);
+    }
 }
 .search-wrapper.active .input-holder .search-input {
   opacity: 1;
@@ -75,7 +90,7 @@ border: solid .1vw var(--color-first);
   height: 30px;
   border: none;
   border-radius: 6px;
-  background: var(--color-light);
+  background: var(--color-first-light);
   padding: 0px;
   outline: none;
   position: relative;
@@ -126,17 +141,19 @@ border: solid .1vw var(--color-first);
 .search-wrapper .close {
   position: absolute;
   z-index: 1;
-  top: 30px;
-  right: 20px;
-  width: 25px;
-  height: 25px;
+  top: 20vw;
+    right: 47vw;
+    width: 7vw;
+    height: 7vw;
   cursor: pointer;
   transform: rotate(-180deg);
   transition: all 0.3s cubic-bezier(0.285, -0.45, 0.935, 0.11);
   transition-delay: 0.2s;
 }
 .search-wrapper.active .close {
-  right: 480px;
+  
+  right: 90vw;
+  top: 21vw;
   transform: rotate(45deg);
   transition: all 0.6s cubic-bezier(0, 0.105, 0.035, 1.57);
   transition-delay: 0.1s;
@@ -159,5 +176,26 @@ border: solid .1vw var(--color-first);
   height: 5px;
   left: 0px;
   top: 10px;
+}
+
+
+
+
+@media (min-width: 480px) {
+
+    .search-wrapper.active .close {
+        right: 35vw;
+        top: 2vw;
+    }
+
+    .search-wrapper .close {
+        top: 26px;
+        right: 16px;
+        width: 25px;
+        height: 25px;
+    }
+    .search-wrapper.active .input-holder {
+        width: 33vw;
+    }
 }
 </style>
