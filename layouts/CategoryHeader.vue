@@ -5,6 +5,14 @@ console.log("header");
 <template>
   <header class="m-header m-category-header">
     <ul class="m-header__navigation">
+        <nuxt-link to="/">
+        <li class="m-header__navigation--item text-sm">
+          <span />
+          <h3>
+            Ballina
+          </h3>
+        </li>
+      </nuxt-link>
       <nuxt-link to="/kategoria/tregime">
         <li class="m-header__navigation--item text-sm">
           <span />

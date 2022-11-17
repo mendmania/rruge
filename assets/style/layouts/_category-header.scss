@@ -3,111 +3,14 @@
     z-index: 0;
     justify-content: center;
     padding: 0 1vw;
-    background-color: var(--color-first);
-    width: 80vw;
-    margin-top: 9vw;
-
-    @media (min-width: 480px) {
-        margin: 0 auto;
-    }
-
-    &:after {
-        content: "";
-        position: absolute;
-        top: -5vw;
-        width: 82vw;
-        height: 5vw;
-        background: var(--color-first-light);
-        left: -2.8vw;
-        transform: skewX(48deg);
-    }
-
-    &:before {
-        content: "";
-        position: absolute;
-        background: var(--color-first-dark);
-        width: 5.5vw;
-        height: 100%;
-        left: -5.5vw;
-        top: -2.5vw;
-        transform: skewY(42deg);
-    }
+    background-color: var(--color-first-light);
+    margin-top: 1vw;
 
     a {
-        color: var(--color-light);
-    }
-
-    li {
-        position: relative;
-        cursor: pointer;
-        transition: all 0.3s ease-in;
-
-        &:before {
-            content: "";
-            width: 100%;
-            width: 100%;
-            height: 2vw;
-            background: var(--color-first-light);
-            position: absolute;
-            left: -1.25vw;
-            top: -2vw;
-            transform: skewX(50deg);
-        }
-
-        &:after {
-            content: "";
-            width: 2.4vw;
-            height: 100%;
-            background: var(--color-first-dark);
-            position: absolute;
-            background: var(--color-first-dark);
-            left: -2.35vw;
-            top: -1.05vw;
-            transition: all 1s ease-in;
-            transform: skewY(40deg);
-            opacity: 0;
-        }
-
-        // span {
-        //     color: var(--color-first);
-        //     position: absolute;
-        //     top: 0;
-        //     bottom: 0;
-        //     right: 0;
-        //     left: 0;
-        //     transition: all 0.3s ease-in;
-
-        //     transform: translate3d(-100%, 0px, 0px);
-        // }
-
-        h3 {
-            z-index: 2;
-            position: relative;
-        }
+        color: var(--color-first-dark);
 
         &:hover {
-            background: var(--color-first);
-            transform: translate3d(3vw, 2vw, 0px);
-            transition-delay: 0.2s;
-            color: var(--color-light);
-            z-index: 4;
-
-            &:after {
-                opacity: 1;
-            }
-
-            span {
-                z-index: 1;
-                transition-delay: 0.2s;
-                transform: translate3d(0, 0, 0);
-                background-color: var(--color-light);
-            }
-
-            // background-color: var(--color-light);
-
-            // a {
-            //     color: var(--color-first);
-            // }
+            color: var(--color-third);
         }
     }
 }
