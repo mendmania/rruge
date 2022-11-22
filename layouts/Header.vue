@@ -3,12 +3,9 @@ console.log("header");
 </script>
 
 <template>
-  <header class="m-header">
+  <header class="m-header skew">
     <h1>Rruge</h1>
     <ul class="m-header__navigation">
-      <li class="m-header__navigation--item text-xsm">
-        <nuxt-link to="/">Home</nuxt-link>
-      </li>
       <li class="m-header__navigation--item text-xsm">
         <nuxt-link to="/about">About</nuxt-link>
       </li>
@@ -19,14 +16,6 @@ console.log("header");
 
     <search-input />
 
-    <!-- <form target="/search"
-          class="m-header__action">
-      <input class="m-header__action--input"
-             name="q"
-             type="search" />
-      <input class="m-header__action--btn"
-             type="submit" />
-    </form> -->
   </header>
 </template>
 
