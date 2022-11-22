@@ -3,5 +3,6 @@ class Article {
         this.id = data.id
         this.name = data.name
         this.date = data.name
+        this.date = data.date
     }
 }
