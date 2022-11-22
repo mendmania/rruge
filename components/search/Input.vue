@@ -36,10 +36,10 @@ function onClickSearchInputAction(data) {
 }
 
 .search-wrapper .input-holder {
-  height: 2vw;
-  width: 30px;
+  height: 2.1vw;
+  width: 2.1vw;
   overflow: hidden;
-  border-radius: 6px;
+  // border-radius: 6px;
   position: relative;
   transition: all 0.3s ease-in-out;
 }
@@ -82,7 +82,7 @@ function onClickSearchInputAction(data) {
   height: 2vw;
   width: 2vw;
   border: none;
-//   border-radius: 6px;
+  border-radius: 100%;
   padding: 0px;
   outline: none;
   position: relative;
@@ -92,10 +92,10 @@ function onClickSearchInputAction(data) {
   transition: all 0.3s ease-in-out;
 }
 .search-wrapper.active .input-holder .search-icon {
-  width: 30px;
-  height: 30px;
-  margin: 0 10px;
-  border-radius: 30px;
+  width: 2vw;
+  height: 2vw;
+  margin: 0 0.5vw;
+  border-radius: 100%;
 }
 .search-wrapper .input-holder .search-icon span {
     width: 1.4vw;
@@ -176,15 +176,15 @@ function onClickSearchInputAction(data) {
 @media (min-width: 480px) {
 
     .search-wrapper.active .close {
-        right: 35vw;
-        top: 2vw;
+      right: 34vw;
+      top: 0.8vw;
     }
 
     .search-wrapper .close {
-        top: 1.5vw;
-        right: 1.1vw;
-        width: 2vw;
-        height: 2vw;
+      top: 0.3vw;
+      right: 0.2vw;
+      width: 2vw;
+      height: 2vw;
     }
     .search-wrapper.active .input-holder {
         width: 33vw;
