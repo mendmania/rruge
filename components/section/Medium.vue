@@ -4,10 +4,7 @@ console.log('section-md')
 
 <template>
   <section class="m-section m-section-md">
-    <CardMedium />
-    <CardMedium />
-    <CardMedium />
-    <CardMedium />
-    <CardMedium />
+   <slot />
+
   </section>
 </template>

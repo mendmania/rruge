@@ -1,5 +1,5 @@
 <script setup>
-import { toRefs } from 'vue';
+import { toRefs } from "vue";
 console.log("article-sm");
 
 const props = defineProps({
@@ -9,18 +9,23 @@ const props = defineProps({
   },
   slug: {
     type: String,
-    required: true
-  }
-})
-
+    required: true,
+  },
+  date: {
+    type: String,
+    required: true,
+  },
+});
 </script>
 
 <template>
   <article class="m-card m-card-sm">
     <nuxt-link :to="slug">
-      {{title}}
+      {{ title }}
     </nuxt-link>
 
-    <time class="text-xsm" datetime="2017-10-31T11:21:00+02:00">Tuesday, 31 October 2017</time>
+    <time class="text-xsm" datetime="2017-10-31T11:21:00+02:00">{{
+      date
+    }}</time>
   </article>
 </template>
