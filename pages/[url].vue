@@ -5,13 +5,10 @@ const { data: singlePost, error } = await useAsyncData("cafes", async () => {
   console.log("cucamalevev", route.fullPath);
   const slug = route.params.url;
 
-  const [post] = await $fetch(
-    `/posts?slug=${slug}`,
-    {
-      method: "GET",
-      baseURL: "https://describedlife.com/wp-json/wp/v2",
-    }
-  );
+  const [post] = await $fetch(`/posts?slug=${slug}`, {
+    method: "GET",
+    baseURL: "https://describedlife.com/wp-json/wp/v2",
+  });
 
   const thumbnail = await $fetch(
     `${post["_links"]["wp:featuredmedia"][0].href}`,
@@ -36,7 +33,6 @@ const { data: singlePost, error } = await useAsyncData("cafes", async () => {
 <template>
   <div class="m-page m-page-article">
     <SectionLarge>
-
       <!-- <pre>
       {{ singlePost.thumbnail.media_details.sizes.thumbnail.source_url }}
     </pre> -->
@@ -45,9 +41,12 @@ const { data: singlePost, error } = await useAsyncData("cafes", async () => {
         :title="singlePost.post.title.rendered"
         :content="singlePost.post.content.rendered"
         :date="singlePost.post.date"
-        :thumbnail="singlePost.thumbnail.media_details.sizes.thumbnail.source_url"
+        :thumbnail="
+          singlePost.thumbnail.media_details.sizes.thumbnail.source_url
+        "
       />
     </SectionLarge>
+
     <SectionSmall>
       <CardMedium />
     </SectionSmall>
