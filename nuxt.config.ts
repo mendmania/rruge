@@ -14,6 +14,9 @@ export default defineNuxtConfig({
                     content: 'my website description'
                 }
             ],
+            link: [
+                { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+              ]
         }
     },
     css: [

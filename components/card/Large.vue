@@ -18,6 +18,11 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  img: {
+    type: String,
+    required: false,
+    default: 'https://describedlife.com/wp-content/uploads/2019/07/p1-optimized.jpg',
+  },
 });
 </script>
 
@@ -26,7 +31,7 @@ const props = defineProps({
     <NuxtLink :to="slug">
       <div class="mc-card-main">
         <img
-          src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+          :src="img ? img : 'https://describedlife.com/wp-content/uploads/2019/07/p1-optimized.jpg'"
           alt=""
           class="mc-card-main__image"
         />

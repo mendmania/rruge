@@ -9,7 +9,7 @@ const { data: homePage, error } = await useAsyncData("cafes", async () => {
   );
 
   const largePosts = await $fetch(
-    `/posts?_fields[]=author&_fields[]=id&_fields[]=slug&_fields[]=title&_fields[]=link&_fields[]=excerpt&_fields[]=date`,
+    `/posts?_fields[]=author&_fields[]=id&_fields[]=slug&_fields[]=title&_fields[]=link&_fields[]=excerpt&_fields[]=date&_fields[]=yoast_head_json`,
     {
       method: "GET",
       baseURL: "https://describedlife.com/wp-json/wp/v2",
@@ -25,7 +25,7 @@ const { data: homePage, error } = await useAsyncData("cafes", async () => {
   // );
 
   const mediumPosts = await $fetch(
-    `/posts?_fields[]=author&_fields[]=id&_fields[]=slug&_fields[]=title&_fields[]=link&_fields[]=date`,
+    `/posts?_fields[]=author&_fields[]=id&_fields[]=slug&_fields[]=title&_fields[]=link&_fields[]=date&_fields[]=yoast_head_json`,
     {
       method: "GET",
       baseURL: "https://describedlife.com/wp-json/wp/v2",
@@ -40,7 +40,7 @@ const { data: homePage, error } = await useAsyncData("cafes", async () => {
   <div class="m-page m-page-home">
     <HeroSection />
     <!-- <pre>
-      {{ homePage.largePosts }}
+      {{ homePage.largePosts[0].yoast_head_json.og_image[0].url }}
     </pre> -->
 
     <WrapperSection>
@@ -62,6 +62,7 @@ const { data: homePage, error } = await useAsyncData("cafes", async () => {
           :slug="largePost.slug"
           :excerpt="largePost.excerpt.rendered"
           :date="largePost.date"
+          :img="largePost.yoast_head_json.og_image ? largePost.yoast_head_json.og_image[0].url : null"
         />
       </SectionLarge>
 
@@ -72,6 +73,7 @@ const { data: homePage, error } = await useAsyncData("cafes", async () => {
           :title="mediumPost.title.rendered"
           :slug="mediumPost.slug"
           :date="mediumPost.date"
+          :img="mediumPost.yoast_head_json.og_image ? mediumPost.yoast_head_json.og_image[0].url : null"
         />
       </SectionMedium>
     </WrapperSection>
