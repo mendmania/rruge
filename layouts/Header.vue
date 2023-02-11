@@ -4,7 +4,7 @@ console.log("header");
 
 <template>
   <header class="m-header skew">
-    <h1>Rruge</h1>
+    <h1><nuxt-link to="/">Rruge</nuxt-link></h1>
     <ul class="m-header__navigation">
       <li class="m-header__navigation--item text-xsm">
         <nuxt-link to="/about">About</nuxt-link>
