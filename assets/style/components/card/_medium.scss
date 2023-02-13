@@ -50,6 +50,10 @@
             backface-visibility: hidden;
             position: relative;
             z-index: -1;
+
+            @media (max-width: 991.98px) {
+                height: 75vw;
+            }
         }
 
         &__text-wrapper {
