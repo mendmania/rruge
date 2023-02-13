@@ -5,37 +5,52 @@ console.log("header");
 <template>
   <header class="m-header m-category-header">
     <ul class="m-header__navigation">
-        <nuxt-link to="/">
+      <nuxt-link to="/">
         <li class="m-header__navigation--item text-sm">
           <span />
-          <h3>
-            Ballina
-          </h3>
+          <h3>Shëndeti Mendor A-Z</h3>
         </li>
       </nuxt-link>
-      <nuxt-link to="/kategoria/tregime">
+      <nuxt-link to="/">
         <li class="m-header__navigation--item text-sm">
           <span />
-          <h3>
-            Tregime
-          </h3>
+          <h3>Ndihmoje vetën</h3>
         </li>
       </nuxt-link>
-      <nuxt-link to="/kategoria/artikuj">
+      <nuxt-link to="/">
         <li class="m-header__navigation--item text-sm">
           <span />
-          <h3>
-            Artikuj
-          </h3>
+          <h3>Psikologji</h3>
         </li>
       </nuxt-link>
-      <nuxt-link to="/kategoria/motivim">
+      <nuxt-link to="/">
         <li class="m-header__navigation--item text-sm">
           <span />
-          <h3>
-
-            Motivim
-          </h3>
+          <h3>Podcast</h3>
+        </li>
+      </nuxt-link>
+      <nuxt-link to="/">
+        <li class="m-header__navigation--item text-sm">
+          <span />
+          <h3>Kuize</h3>
+        </li>
+      </nuxt-link>
+      <nuxt-link to="/">
+        <li class="m-header__navigation--item text-sm">
+          <span />
+          <h3>Lifestyle</h3>
+        </li>
+      </nuxt-link>
+      <nuxt-link to="/">
+        <li class="m-header__navigation--item text-sm">
+          <span />
+          <h3>Lifestyle</h3>
+        </li>
+      </nuxt-link>
+      <nuxt-link to="/">
+        <li class="m-header__navigation--item text-sm">
+          <span />
+          <h3>Lajme</h3>
         </li>
       </nuxt-link>
     </ul>

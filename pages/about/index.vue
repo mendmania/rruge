@@ -9,7 +9,7 @@ useHead({
 
 <template>
     <div class="m-about-page">
-        About
+      Rreth Nesh
     </div>
 </template>
 

@@ -34,7 +34,7 @@ const { data: singlePost, error } = await useAsyncData("cafes", async () => {
   <div class="m-page m-page-article">
     <SectionLarge>
       <!-- <pre>
-      {{ singlePost.thumbnail.media_details.sizes.thumbnail.source_url }}
+      {{ singlePost}}
     </pre> -->
 
       <ArticleMain
@@ -42,7 +42,7 @@ const { data: singlePost, error } = await useAsyncData("cafes", async () => {
         :content="singlePost.post.content.rendered"
         :date="singlePost.post.date"
         :thumbnail="
-          singlePost.thumbnail.media_details.sizes.thumbnail.source_url
+          singlePost.thumbnail.media_details.sizes.medium.source_url
         "
       />
     </SectionLarge>

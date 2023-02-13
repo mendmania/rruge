@@ -15,7 +15,7 @@ function onClickSearchInputAction(data) {
     <div class="input-holder">
       <input type="text"
              class="search-input"
-             placeholder="Type to search" />
+             placeholder="Kerko..." />
       <button class="search-icon" @click="onClickSearchInputAction(true)"><span></span></button>
     </div>
     <span class="close" @click="onClickSearchInputAction(false)"></span>
