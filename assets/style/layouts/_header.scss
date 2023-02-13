@@ -10,7 +10,7 @@
     width: 90vw;
     margin: 0 auto;
 
-    @media (max-width: 991.98px) {
+    @media (max-width: 575.98px) {
         width: 100vw;
         padding: 0;
         
@@ -19,7 +19,7 @@
     &__logo {
         width: 50px;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: 575.98px) {
             width: 60vw;
         }
     }
@@ -39,7 +39,7 @@
         margin: 0;
         padding: 0;
 
-        @media (max-width: 991.98px) {
+        @media (max-width: 575.98px) {
             flex-direction: column;
         }
 
