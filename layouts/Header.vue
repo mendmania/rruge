@@ -4,9 +4,9 @@ console.log("header");
 
 <template>
   <header class="m-header skew">
-    <div> 
+    <div class="m-header-logo-wrapper"> 
       <nuxt-link to="/">
-        <img class="m-header__logo" src="../assets/images/logo/rruge250x250.png" />
+        <img class="m-header__logo" src="../assets/images/logo/rruge250x250.png" /> Rruge
       </nuxt-link>
     </div> 
     <ul class="m-header__navigation row">

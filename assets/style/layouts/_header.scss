@@ -16,8 +16,18 @@
         
     }
 
+    &-logo-wrapper{
+
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+    } 
+
     &__logo {
         width: 50px;
+        margin-right: .4vw;
 
         @media (max-width: 575.98px) {
             width: 60vw;
