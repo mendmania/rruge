@@ -1,22 +1,21 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const searchInputActive = ref(true)
+const searchInputActive = ref(true);
 
 function onClickSearchInputAction(data) {
-    searchInputActive.value = data
-} 
-
+  searchInputActive.value = data;
+}
 </script>
 
 
 <template>
   <div class="search-wrapper" :class="searchInputActive ? 'active' : null">
     <div class="input-holder">
-      <input type="text"
-             class="search-input"
-             placeholder="Kerko..." />
-      <button class="search-icon" @click="onClickSearchInputAction(true)"><span></span></button>
+      <input type="text" class="search-input" placeholder="Kerko..." />
+      <button class="search-icon" @click="onClickSearchInputAction(true)">
+        <span></span>
+      </button>
     </div>
     <span class="close" @click="onClickSearchInputAction(false)"></span>
   </div>
@@ -24,15 +23,13 @@ function onClickSearchInputAction(data) {
 
 
 <style lang="scss" scoped>
-
-
 ::selection {
   background: var(--color-first);
   color: var(--color-light);
 }
 
 ::placeholder {
-    color: var(--color-dark)
+  color: var(--color-dark);
 }
 
 .search-wrapper .input-holder {
@@ -44,9 +41,9 @@ function onClickSearchInputAction(data) {
   transition: all 0.3s ease-in-out;
 }
 .search-wrapper.active .input-holder {
-    width: 70vw;
-    border: solid .1vw var(--color-first);
-    transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57);
+  width: 70vw;
+  border: solid 0.1vw var(--color-first);
+  transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57);
 }
 .search-wrapper .input-holder .search-input {
   width: 100%;
@@ -70,13 +67,13 @@ function onClickSearchInputAction(data) {
 }
 
 @media (min-width: 480px) {
-    .search-wrapper .input-holder .search-input {
-        color: var(--color-first);
-    }
+  .search-wrapper .input-holder .search-input {
+    color: var(--color-first);
+  }
 }
 .search-wrapper.active .input-holder .search-input {
   opacity: 1;
-  transform: translate(0, 0.6vw)
+  transform: translate(0, 0.6vw);
 }
 .search-wrapper .input-holder .search-icon {
   height: 2vw;
@@ -98,8 +95,8 @@ function onClickSearchInputAction(data) {
   border-radius: 100%;
 }
 .search-wrapper .input-holder .search-icon span {
-    width: 1.4vw;
-    height: 1.4vw;
+  width: 1.4vw;
+  height: 1.4vw;
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -115,35 +112,34 @@ function onClickSearchInputAction(data) {
   content: "";
 }
 .search-wrapper .input-holder .search-icon span::before {
-    width: 0.3vw;
-    height: 0.8vw;
-    left: 0.6vw;
-    top: 1.3vw;
-//   border-radius: 2px;
+  width: 0.3vw;
+  height: 0.8vw;
+  left: 0.6vw;
+  top: 1.3vw;
+  //   border-radius: 2px;
   background: var(--color-first);
 }
 .search-wrapper .input-holder .search-icon span::after {
-    width: 1vw;
-    height: 1vw;
-    left: 0;
-    top: 0;
-    border-radius: 100%;
-    border: 0.23vw solid var(--color-first);
+  width: 1vw;
+  height: 1vw;
+  left: 0;
+  top: 0;
+  border-radius: 100%;
+  border: 0.23vw solid var(--color-first);
 }
 .search-wrapper .close {
   position: absolute;
   z-index: 1;
   top: 20vw;
-    right: 47vw;
-    width: 7vw;
-    height: 7vw;
+  right: 47vw;
+  width: 7vw;
+  height: 7vw;
   cursor: pointer;
   transform: rotate(-180deg);
   transition: all 0.3s cubic-bezier(0.285, -0.45, 0.935, 0.11);
   transition-delay: 0.2s;
 }
 .search-wrapper.active .close {
-  
   right: 90vw;
   top: 21vw;
   transform: rotate(45deg);
@@ -158,36 +154,47 @@ function onClickSearchInputAction(data) {
   border-radius: 2px;
 }
 .search-wrapper .close::before {
-    width: 0.35vw;
-    height: 1.6vw;
-    left: 0.6vw;
-    top: 0;
+  width: 0.35vw;
+  height: 1.6vw;
+  left: 0.6vw;
+  top: 0;
 }
 .search-wrapper .close::after {
-    width: 1.6vw;
-    height: 0.35vw;
-    left: 0vw;
-    top: 0.6vw;
+  width: 1.6vw;
+  height: 0.35vw;
+  left: 0vw;
+  top: 0.6vw;
+}
+.search-wrapper .input-holder {
+  height: 5.5vw;
 }
 
-
-
+.search-wrapper .input-holder .search-input {
+  height: 5.5vw;
+  font-size: 2vw;
+}
 
 @media (min-width: 480px) {
+  .search-wrapper.active .close {
+    right: 34vw;
+    top: 0.8vw;
+  }
+  .search-wrapper .input-holder {
+    height: 2.1vw;
+  }
 
-    .search-wrapper.active .close {
-      right: 34vw;
-      top: 0.8vw;
-    }
-
-    .search-wrapper .close {
-      top: 0.3vw;
-      right: 0.2vw;
-      width: 2vw;
-      height: 2vw;
-    }
-    .search-wrapper.active .input-holder {
-        width: 33vw;
-    }
+  .search-wrapper .input-holder .search-input {
+    height: 2.1vw;
+    font-size: 1vw;
+  }
+  .search-wrapper .close {
+    top: 0.3vw;
+    right: 0.2vw;
+    width: 2vw;
+    height: 2vw;
+  }
+  .search-wrapper.active .input-holder {
+    width: 33vw;
+  }
 }
 </style>
