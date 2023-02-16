@@ -44,12 +44,6 @@ console.log("header");
       <nuxt-link to="/">
         <li class="m-header__navigation--item text-sm">
           <span />
-          <h3>Lifestyle</h3>
-        </li>
-      </nuxt-link>
-      <nuxt-link to="/">
-        <li class="m-header__navigation--item text-sm">
-          <span />
           <h3>Lajme</h3>
         </li>
       </nuxt-link>

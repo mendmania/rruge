@@ -32,7 +32,7 @@ const props = defineProps({
       <div class="mc-card-main">
         <img
           :src="img ? img : 'https://describedlife.com/wp-content/uploads/2019/07/p1-optimized.jpg'"
-          alt=""
+          alt="main image card"
           class="mc-card-main__image"
         />
         <div class="mc-card-main__text-wrapper">
